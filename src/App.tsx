@@ -222,44 +222,7 @@ function App() {
         <TestimonialSlider />
       </section>
       {/* Partners */}
-      <section className="container mx-auto px-4 py-20">
-  <h2 className="text-3xl font-bold text-center mb-16">Our Partner</h2>
-  <div className="partners-container">
-    {["https://via.placeholder.com/150?text=Brand+1", "https://via.placeholder.com/150?text=Brand+2", "https://via.placeholder.com/150?text=Brand+3", "https://via.placeholder.com/150?text=Brand+4", "https://via.placeholder.com/150?text=Brand+5", "https://via.placeholder.com/150?text=Brand+6", "https://via.placeholder.com/150?text=Brand+7", "https://via.placeholder.com/150?text=Brand+8", "https://via.placeholder.com/150?text=Brand+9", "https://via.placeholder.com/150?text=Brand+10", "https://via.placeholder.com/150?text=Brand+11", "https://via.placeholder.com/150?text=Brand+12"].map((imageSrc, index) => (
-      <div key={index} className="partner-card">
-        <img src={imageSrc} alt={`Brand ${index + 1}`} className="w-32 h-32 object-contain mx-auto" />
-        <div className="text-2xl font-bold mt-4">Brand {index + 1}</div>
-      </div>
-    ))}
-  </div>
-</section>
-
-<style>{`
-  .partners-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    animation: scrollRight 20s linear infinite;
-  }
-
-  .partner-card {
-    margin-right: 40px;
-    text-align: center;
-  }
-
-  @keyframes scrollRight {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%); /* حرك الكروت إلى اليسار */
-    }
-  }
-`}</style>
-
-
-
-
+  
 
       {/* Blog Posts */}
       <section id="blog" className="container mx-auto px-4 py-20">
