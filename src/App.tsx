@@ -252,27 +252,27 @@ function App() {
         {
           name: "Next World",
           image: "./partners-logos/Next-World.png", // رابط صورة للبراند
-          linkedin: "https://www.linkedin.com/in/brand5",
+          linkedin: "https://nextworldeg.com/",
         },
         {
           name: "Nokmil",
           image: "./partners-logos/Nokmil.png", // رابط صورة للبراند
-          linkedin: "https://www.linkedin.com/in/brand6",
+          linkedin: "https://nukmil.com/",
         },
         {
           name: "Rally Society",
           image: "./partners-logos/Rally-Society.png", // رابط صورة للبراند
-          linkedin: "https://www.linkedin.com/in/brand7",
+          linkedin: "hhttps://www.facebook.com/p/Rally-Alex-University-61553820874016/",
         },
         {
           name: "Sustania",
           image: "./partners-logos/Sustania.png", // رابط صورة للبراند
-          linkedin: "https://www.linkedin.com/in/brand8",
+          linkedin: "https://www.facebook.com/profile.php?id=61558782151337",
         },
         {
           name: "Tiec",
           image: "./partners-logos/Tiec.png", // رابط صورة للبراند
-          linkedin: "https://www.linkedin.com/in/brand9",
+          linkedin: "https://tiec.gov.eg/English/Pages/default.aspx",
         },
         {
           name: "Techne",
@@ -295,70 +295,68 @@ function App() {
       ].concat([
         // تكرار نفس القائمة لعمل تأثير التفاف
         {
-          name: "Brand 1",
-          image: "./partners-logos/Creativa.png",
-          linkedin: "https://www.linkedin.com/in/brand1",
+          name: "Arab Youth",
+          image: "./partners-logos/Arab-Youth.png", // رابط صورة للبراند
+          linkedin: "https://www.facebook.com/ArabYouthEntrepreneurshipForum/",
         },
         {
-          name: "Brand 2",
-          image: "./partners-logos/Creativa.png",
-          linkedin: "https://www.linkedin.com/in/brand2",
+          name: "Enactus",
+          image: "./partners-logos/Enactus.png", // رابط صورة للبراند
+          linkedin: "https://www.linkedin.com/company/enactusalexu/",
         },
         {
-          name: "Brand 3",
-          image: "./partners-logos/Creativa.png",
-          linkedin: "https://www.linkedin.com/in/brand3",
+          name: "Error",
+          image: "./partners-logos/Error.png", // رابط صورة للبراند
+          linkedin: "https://www.facebook.com/errorsolutionshub/",
         },
         {
-          name: "Brand 4",
-          image: "./partners-logos/Creativa.png",
-          linkedin: "https://www.linkedin.com/in/brand4",
+          name: "Itida",
+          image: "./partners-logos/Itida.png", // رابط صورة للبراند
+          linkedin: "https://itida.gov.eg/English/Pages/default.aspx",
         },
         {
-          name: "Brand 5",
-          image: "./partners-logos/Creativa.png",
-          linkedin: "https://www.linkedin.com/in/brand5",
+          name: "Next World",
+          image: "./partners-logos/Next-World.png", // رابط صورة للبراند
+          linkedin: "https://nextworldeg.com/",
         },
         {
-          name: "Brand 6",
-          image: "./partners-logos/Creativa.png",
-          linkedin: "https://www.linkedin.com/in/brand6",
+          name: "Nokmil",
+          image: "./partners-logos/Nokmil.png", // رابط صورة للبراند
+          linkedin: "https://nukmil.com/",
         },
         {
-          name: "Brand 7",
-          image: "./partners-logos/Creativa.png",
-          linkedin: "https://www.linkedin.com/in/brand7",
+          name: "Rally Society",
+          image: "./partners-logos/Rally-Society.png", // رابط صورة للبراند
+          linkedin: "hhttps://www.facebook.com/p/Rally-Alex-University-61553820874016/",
         },
         {
-          name: "Brand 8",
-          image: "./partners-logos/Creativa.png",
-          linkedin: "https://www.linkedin.com/in/brand8",
+          name: "Sustania",
+          image: "./partners-logos/Sustania.png", // رابط صورة للبراند
+          linkedin: "https://www.facebook.com/profile.php?id=61558782151337",
         },
         {
-          name: "Brand 9",
-          image: "./partners-logos/Creativa.png",
-          linkedin: "https://www.linkedin.com/in/brand9",
+          name: "Tiec",
+          image: "./partners-logos/Tiec.png", // رابط صورة للبراند
+          linkedin: "https://tiec.gov.eg/English/Pages/default.aspx",
         },
         {
-          name: "Brand 10",
-          image: "./partners-logos/Creativa.png",
-          linkedin: "https://www.linkedin.com/in/brand10",
+          name: "Techne",
+          image: "./partners-logos/Techne.png", // رابط صورة للبراند
+          linkedin: "https://techne.me/",
+        },
+
+
+        {
+          name: "Venture X",
+          image: "./partners-logos/Venture-X.png",
+          linkedin: "https://www.theventurex.com/",
         },
         {
-          name: "Brand 11",
+          name: "Creativa",
           image: "./partners-logos/Creativa.png",
-          linkedin: "https://www.linkedin.com/in/brand10",
+          linkedin: "https://www.linkedin.com/company/creativa-hub-alexandria",
         },
-        {
-          name: "Creative",
-          image: "./partners-logos/Creativa.png",
-          linkedin: "https://www.linkedin.com/in/brand10",
-        },
-        {
-          name: "Brand 12",
-          image: "./partners-logos/Creativa.png",
-          linkedin: "https://www.linkedin.com/in/brand10",
-        },
+
       ]).map((brand, index) => (
         <div key={index} className="flex flex-col items-center text-center">
           <a
