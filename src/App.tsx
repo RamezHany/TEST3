@@ -402,7 +402,7 @@ function App() {
     .animate-marquee {
       justify-content: space-around;
       width: 100%;
- animation-duration: 10s;
+
       
     }
     .animate-marquee > div {
