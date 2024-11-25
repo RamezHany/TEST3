@@ -291,6 +291,8 @@ function App() {
         },
       ]
         .concat([
+          // Duplicating for wrap-around effect
+
           {
             name: "Arab Youth",
             image: "./partners-logos/Arab-Youth.png",
@@ -395,8 +397,20 @@ function App() {
     animation: marquee 20s linear infinite;
     width: 500%;
   }
+  /* Media Query for Mobile Devices */
+  @media (max-width: 640px) {
+    .animate-marquee {
+      justify-content: space-around;
+      width: 100%;
+    }
+    .animate-marquee > div {
+      flex: 0 0 30%;
+      max-width: 30%;
+    }
+  }
 `}
 </style>
+
 
       {/* Blog Posts */}
       <section id="blog" className="container mx-auto px-4 py-20">
