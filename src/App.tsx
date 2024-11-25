@@ -22,42 +22,57 @@ function App() {
       <Navbar />
 
       {/* Hero Section */}
+
       <section
-        id="home"
-        style={{
-          backgroundImage: "url(/img/hero.png)",
-          backgroundSize: "cover", // Ensures the image covers the whole section
-          backgroundRepeat: "no-repeat", // Prevents repeating the image
-          backgroundPosition: "center", // Centers the image
-        }}
-      >
-        <div className="grid md:grid-cols-2 gap-12 items-center p-6 rounded-lg">
-          <div className="mt-16 md:mt-0">
-            {" "}
-            {/* Added margin-top for mobile */}
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Digital Marketing Solutions for Business Growth
-            </h1>
-            <p className="text-gray-200 mb-8">
-              Transform your online presence with data-driven marketing
-              strategies. We help businesses achieve measurable growth through
-              innovative digital solutions.
-            </p>
-            <button className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 flex items-center gap-2 transition-colors">
-              Get Started
-              <ArrowRight className="w-4 h-4" />
-            </button>
-            <div className="flex flex-wrap gap-8 md:gap-12 mt-12"></div>
-          </div>
-          <div className="relative">
-            <img
-              src="./img/avatar.png"
-              alt="Digital Marketing Solutions"
-              className="rounded-lg w-full"
-            />
-          </div>
-        </div>
-      </section>
+  id="home"
+
+  
+  style={{
+    backgroundImage: "url(/img/hero.png)",
+    backgroundSize: "cover", // Ensures the image covers the whole section
+    backgroundRepeat: "no-repeat", // Prevents repeating the image
+    backgroundPosition: "center", // Centers the image
+  }}
+>
+
+
+
+      <section
+  id="home"
+
+  
+
+>
+
+<div className="container mx-auto px-4 py-20"> 
+
+<div className="grid md:grid-cols-2 gap-12 items-center px-4 py-12 rounded-lg"> {/* Increased padding here */}
+    <div className="mt-16 md:mt-0">
+      <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+        Digital Marketing Solutions for Business Growth
+      </h1>
+      <p className="text-gray-200 mb-8">
+        Transform your online presence with data-driven marketing strategies. We help businesses achieve measurable growth through innovative digital solutions.
+      </p>
+      <button className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 flex items-center gap-2 transition-colors">
+        Get Started
+        <ArrowRight className="w-4 h-4" />
+      </button>
+    </div>
+    <div className="relative">
+  <img
+    src="./img/avatar.png"
+    alt="Digital Marketing Solutions"
+    className="rounded-lg w-full h-90" // استخدمت w-32 و h-32 لتحديد حجم معين للصورة
+  />
+</div>
+  </div>
+  </div>
+</section>
+
+
+
+
 
       {/* Features Section */}
       <section id="services" className="container mx-auto px-4 py-20">
@@ -531,6 +546,12 @@ function App() {
         </div>
       </section>
 
+
+
+      </section>
+
+
+
       {/* Footer */}
       <footer className="bg-[#151923] py-20">
         <div className="container mx-auto px-4">
@@ -598,7 +619,18 @@ function App() {
         </div>
       </footer>
     </div>
+
+
+
+
+
+
+
+
   );
 }
+
+
+
 
 export default App;
