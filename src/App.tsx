@@ -389,31 +389,41 @@ function App() {
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(-20%);
+      transform: translateX(-100%);
     }
   }
+
   .animate-marquee {
     display: flex;
-    animation: marquee 20s linear infinite;
-    width: 500%;
+    animation: marquee 15s linear infinite;
+    will-change: transform;
+    width: 100%;
   }
+
+  /* Marquee loop fix for continuous scroll */
+  .animate-marquee > div {
+    flex: 0 0 auto; /* Prevent items from shrinking */
+  }
+
   /* Media Query for Mobile Devices */
   @media (max-width: 640px) {
     .animate-marquee {
       justify-content: space-around;
-      width: 100%;
-
-      
+      animation: marquee 10s linear infinite;
     }
     .animate-marquee > div {
       flex: 0 0 30%;
       max-width: 30%;
     }
   }
+
+  /* Hover effect to simulate 'warp' effect */
+  .animate-marquee > div:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  }
 `}
 </style>
-
-
       {/* Blog Posts */}
       <section id="blog" className="container mx-auto px-4 py-20">
         <div className="text-center mb-16">
