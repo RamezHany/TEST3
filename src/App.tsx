@@ -403,7 +403,7 @@ function App() {
 
   @media (max-width: 768px) {
   .animate-marquee {
-    width: 250%; /* تقليل العرض قليلاً لتناسب الموبايل */
+    width: 500%; /* تقليل العرض قليلاً لتناسب الموبايل */
   }
 `}
 </style>
