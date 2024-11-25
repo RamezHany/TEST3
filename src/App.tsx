@@ -401,10 +401,7 @@ function App() {
     width: 500%; /* لتظهر 5 صور فقط بدون تأثير على الجوال */
   }
 
-  @media (max-width: 768px) {
-  .animate-marquee {
-    width: 500%; /* تقليل العرض قليلاً لتناسب الموبايل */
-  }
+
 `}
 </style>
 
