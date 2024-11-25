@@ -222,7 +222,188 @@ function App() {
         <TestimonialSlider />
       </section>
       {/* Partners */}
-  
+      <section className="container mx-auto px-4 py-16 overflow-hidden">
+  <h2 className="text-3xl font-bold text-center mb-12">Our Partners</h2>
+  <div className="relative">
+    {/* Marquee wrapper */}
+    <div className="flex animate-marquee whitespace-nowrap gap-6">
+      {/* إضافة العناصر مرتين لعمل تأثير التفاف */}
+      {[
+        {
+          name: "Arab Youth",
+          image: "./partners-logos/Arab-Youth.png", // رابط صورة للبراند
+          linkedin: "https://www.facebook.com/ArabYouthEntrepreneurshipForum/",
+        },
+        {
+          name: "Enactus",
+          image: "./partners-logos/Enactus.png", // رابط صورة للبراند
+          linkedin: "https://www.linkedin.com/company/enactusalexu/",
+        },
+        {
+          name: "Error",
+          image: "./partners-logos/Error.png", // رابط صورة للبراند
+          linkedin: "https://www.facebook.com/errorsolutionshub/",
+        },
+        {
+          name: "Itida",
+          image: "./partners-logos/Itida.png", // رابط صورة للبراند
+          linkedin: "https://itida.gov.eg/English/Pages/default.aspx",
+        },
+        {
+          name: "Next World",
+          image: "./partners-logos/Next-World.png", // رابط صورة للبراند
+          linkedin: "https://www.linkedin.com/in/brand5",
+        },
+        {
+          name: "Nokmil",
+          image: "./partners-logos/Nokmil.png", // رابط صورة للبراند
+          linkedin: "https://www.linkedin.com/in/brand6",
+        },
+        {
+          name: "Rally Society",
+          image: "./partners-logos/Rally-Society.png", // رابط صورة للبراند
+          linkedin: "https://www.linkedin.com/in/brand7",
+        },
+        {
+          name: "Sustania",
+          image: "./partners-logos/Sustania.png", // رابط صورة للبراند
+          linkedin: "https://www.linkedin.com/in/brand8",
+        },
+        {
+          name: "Tiec",
+          image: "./partners-logos/Tiec.png", // رابط صورة للبراند
+          linkedin: "https://www.linkedin.com/in/brand9",
+        },
+        {
+          name: "Techne",
+          image: "./partners-logos/Techne.png", // رابط صورة للبراند
+          linkedin: "https://techne.me/",
+        },
+
+
+        {
+          name: "Venture X",
+          image: "./partners-logos/Venture-X.png",
+          linkedin: "https://www.theventurex.com/",
+        },
+        {
+          name: "Creativa",
+          image: "./partners-logos/Creativa.png",
+          linkedin: "https://www.linkedin.com/company/creativa-hub-alexandria",
+        },
+
+      ].concat([
+        // تكرار نفس القائمة لعمل تأثير التفاف
+        {
+          name: "Brand 1",
+          image: "./partners-logos/Creativa.png",
+          linkedin: "https://www.linkedin.com/in/brand1",
+        },
+        {
+          name: "Brand 2",
+          image: "./partners-logos/Creativa.png",
+          linkedin: "https://www.linkedin.com/in/brand2",
+        },
+        {
+          name: "Brand 3",
+          image: "./partners-logos/Creativa.png",
+          linkedin: "https://www.linkedin.com/in/brand3",
+        },
+        {
+          name: "Brand 4",
+          image: "./partners-logos/Creativa.png",
+          linkedin: "https://www.linkedin.com/in/brand4",
+        },
+        {
+          name: "Brand 5",
+          image: "./partners-logos/Creativa.png",
+          linkedin: "https://www.linkedin.com/in/brand5",
+        },
+        {
+          name: "Brand 6",
+          image: "./partners-logos/Creativa.png",
+          linkedin: "https://www.linkedin.com/in/brand6",
+        },
+        {
+          name: "Brand 7",
+          image: "./partners-logos/Creativa.png",
+          linkedin: "https://www.linkedin.com/in/brand7",
+        },
+        {
+          name: "Brand 8",
+          image: "./partners-logos/Creativa.png",
+          linkedin: "https://www.linkedin.com/in/brand8",
+        },
+        {
+          name: "Brand 9",
+          image: "./partners-logos/Creativa.png",
+          linkedin: "https://www.linkedin.com/in/brand9",
+        },
+        {
+          name: "Brand 10",
+          image: "./partners-logos/Creativa.png",
+          linkedin: "https://www.linkedin.com/in/brand10",
+        },
+        {
+          name: "Brand 11",
+          image: "./partners-logos/Creativa.png",
+          linkedin: "https://www.linkedin.com/in/brand10",
+        },
+        {
+          name: "Creative",
+          image: "./partners-logos/Creativa.png",
+          linkedin: "https://www.linkedin.com/in/brand10",
+        },
+        {
+          name: "Brand 12",
+          image: "./partners-logos/Creativa.png",
+          linkedin: "https://www.linkedin.com/in/brand10",
+        },
+      ]).map((brand, index) => (
+        <div key={index} className="flex flex-col items-center text-center">
+          <a
+            href={brand.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mb-1"
+          >
+            <img
+              src={brand.image}
+              alt={`${brand.name} Logo`}
+              className="w-24 h-24 object-cover rounded-full hover:scale-105 transition-transform duration-300"
+            />
+          </a>
+          <a
+            href={brand.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium text-blue-600 hover:underline"
+          >
+            {brand.name}
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+{`
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-20%);
+    }
+  }
+  .animate-marquee {
+    display: flex;
+    animation: marquee 20s linear infinite; /* تباطؤ الحركة إلى 20 ثانية */
+    width: 500%; /* لتظهر 5 صور فقط بدون تأثير على الجوال */
+  }
+`}
+</style>
 
       {/* Blog Posts */}
       <section id="blog" className="container mx-auto px-4 py-20">
