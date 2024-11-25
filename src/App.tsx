@@ -368,7 +368,7 @@ function App() {
             <img
               src={brand.image}
               alt={`${brand.name} Logo`}
-              className="w-24 h-24 object-cover rounded-full hover:scale-105 transition-transform duration-300"
+              className="w-1/4 h-auto object-cover rounded-full hover:scale-105 transition-transform duration-300"
             />
           </a>
           <a
@@ -399,6 +399,11 @@ function App() {
     display: flex;
     animation: marquee 20s linear infinite; /* تباطؤ الحركة إلى 20 ثانية */
     width: 500%; /* لتظهر 5 صور فقط بدون تأثير على الجوال */
+  }
+
+  @media (max-width: 768px) {
+  .animate-marquee {
+    width: 250%; /* تقليل العرض قليلاً لتناسب الموبايل */
   }
 `}
 </style>
